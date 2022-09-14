@@ -1,0 +1,340 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    
+    <link rel="stylesheet" href="./style.css">
+    
+    <script src="jquery.js"></script>
+    <script src="parsley.js"></script>
+    <script defer src="./index.js"></script>
+<title>Candidate Snapshot Creator</title>
+</head>
+<body style="background-image: url('./44.jpg');background-attachment: fixed; background-size: 100% 100%;">
+    
+    <img type="image" src="./Transition Overwatch.png"  width="400" height="75" >
+    <h1 class="MainTitle">Candidate Snapshot Creator</h1>
+    <div style="border: 3px solid black; border-color: gray; border-radius: 10px; padding: 4px; background: black">
+    <form data-parsley-validate>
+        
+        <form  action="/action_page.php" method="get" id="Snapshot-form" data-parsley-validate>
+            <label class="section">Upload Headshot</label>
+            <input type="file" id="avatar" name="avatar" accept="image/png, image/jpeg"><!-- Name DIV -->
+            <h2 class="Title">Contact</h2>
+            
+            <div class="section">
+                <div class="Contact" id="Contact-div" >
+                    <label class="Contact">Name</label>
+                    <input type="text" name="name" id="name" required>
+                </div>
+                <!-- Title Div -->
+                <div class="Contact" id="Title">
+                    <label class="Contact">Title</label>
+                    <input type="text" title="title" id="title" required>
+                </div>
+                <!-- Phone number DIV -->
+                <div class="Contact" id="Phone">
+                    <label class="Contact">Contact Number</label>
+                    <input type="tel" name="number" id="number" required>
+                </div>
+                <!-- Email Div -->
+                <div class="Contact" id="Email">
+                    <label class="Contact">Email</label>
+                    <input type="email" name="title" id="email" required>
+                </div>
+                <!-- LinkedIn Div -->
+                <div class="Contact" id="LinkedIn">
+                    <label class="url" name="LinkedIn" id="LinkedIn" >
+                </div>
+            
+        </div>
+            <h2 class="Title">Demographics</h2>
+            <div class="section">
+                <!-- Branch Div -->
+            <div class="Contact" id="Branch">
+                <label class="Contact">Select your Branch</label>
+                <select name="Branch" id="BranchList" required>
+                    <option value="Army">Army</option>
+                    <option value="Navy">Navy</option>
+                    <option value="Marines">Marines</option>
+                    <option value="Airforce">Airforce</option>
+                    <option value="CoastGuard">CoastGuard</option>
+                  </select>
+            </div>
+            <!-- Security Clearance Div -->
+            <div class="Contact" id="Security">
+                <label class="Contact">Security Clearance</label>
+                <select name="Clearance" id="Clearance" required>
+                    <option value="Confidential">Confidential</option>
+                    <option value="Secret">Secret</option>
+                    <option value="TS/SCI">TS/SCI</option>
+                    <option value="Pending">Pending</option>
+                    <option value="N/A">N/A</option>
+                  </select>
+            </div>
+            
+        </div>
+            <table class="tablesection">
+                <!-- Row One -->
+                <tr class="Table" id="Table">
+                    <th>PHASE-ONE (PRE-TRANSITION)</th>
+                    <th>PHASE-TWO (POST-TRANSITION)</th>
+                </tr>
+                <!-- Row Two -->
+                <tr>
+                    <td>
+                        <label class="ETS">Date of Terminal leave</label>
+                        <input type="date" name="ETS" id="ETS" required>
+                    </td>
+                    <td>
+                        <label class="Details">Date available for Employment</label>
+                        <input type="date" name="available" id="available" required>
+                    </td>
+                </tr>   
+                <!-- Row Three -->
+                    <tr>
+                        <td>
+                            <label class="Details">Training-Partner</label>
+                            <select name="Training-Partner" id="Training-Partner" required>
+                                <option value="Galvanize">Galvanize</option>
+                                <option value="Code-Platoon">Code Platoon</option>
+                                <option value="OtherTraining">Other</option>
+                            </select>
+                        </td>
+                        <td>
+                            <label class="Locations">Preferred Locations</label>
+                            <input type="text" name="available" id="Locations" required>
+                        </td>
+                        
+                    </tr>  
+            </table>
+            
+            <h2 class="Title" id="Secret Sauce"> Secret Sauce</h2>
+            <div>
+                <input type="text" name="Secret-Sauce" id="Secret-Sauce" style="width: 800px; height: 100px; padding-left: 5px; resize: none; text-align: left;" required>
+            </div>
+            <h2 class="Title" id="Experience">Experience</h2>
+            
+            <!-- Experience Table -->
+            <div class="experience-table">
+                <table>
+                <!-- Row One -->
+                <tr class="Table" id="Table">
+                    <th>Position Title</th>
+                    <th>Years in this Position</th>
+                    <th>Value of Managed Assets</th>
+                    <th>Direct Reports</th>
+                    <th>Management Level</th>
+                    <th>Presentation Experience</th>
+                </tr>
+                <!-- Row Two -->
+                <tr>
+                    <td>
+                        <input type="text" name="Position" id="Position" required>
+                    </td>
+                    <td>
+                        <input type="number" name="years" id="years" required>
+                    </td>
+                    <td>
+                        <input type="text" name="Assets" id="Assets" required>
+                    </td>
+                    <td>
+                        <input type="text" name="reports" id="reports" required>
+                    </td>
+                    <td>
+                        <select class="table" name="management-level" id="management-level">
+                            <option value="Director">Director (led team of teams)</option>
+                            <option value="Manager">Manager (led department)</option>
+                            <option value="Supervisor">Supervisor (led team)</option>
+                            <option value="Trainer">Trainer (trained individuals)</option>
+                    </td>
+                    <td>
+                        <select class="table" name="Presentation-experience" id="Presentation-experience">
+                            <option value="Executive">Executives</option>
+                            <option value="Manager">Branch</option>
+                            <option value="Supervisor">Team</option>
+                            <option value="Trainer">Individual)</option>
+                    </td>
+                </tr>  
+                            <!-- Experience Table 2 -->
+                            <table>
+                                <!-- Row One -->
+                                <tr class="Table" id="Table">
+                                    <th>Position Title</th>
+                                    <th>Years in this Position</th>
+                                    <th>Value of Managed Assets</th>
+                                    <th>Direct Reports</th>
+                                    <th>Management Level</th>
+                                    <th>Presentation Experience</th>
+                                </tr>
+                                <!-- Row Two -->
+                                <tr>
+                                    <td>
+                                        <input type="text" name="Position" id="Position" >
+                                    </td>
+                                    <td>
+                                        <input type="number" name="years" id="years" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name="Assets" id="Assets" >
+                                    </td>
+                                    <td>
+                                        <input type="text" name="reports" id="reports" >
+                                    </td>
+                                    <td>
+                                        <select class="table" name="management-level" id="management-level">
+                                            <option value="Director">Director (led team of teams)</option>
+                                            <option value="Manager">Manager (led department)</option>
+                                            <option value="Supervisor">Supervisor (led team)</option>
+                                            <option value="Trainer">Trainer (trained individuals)</option>
+                                    </td>
+                                    <td>
+                                        <select class="table" name="Presentation-experience" id="Presentation-experience" required>
+                                            <option value="Executive">Executives</option>
+                                            <option value="Manager">Branch</option>
+                                            <option value="Supervisor">Team</option>
+                                            <option value="Trainer">Individual)</option>
+                                    </td>
+                                </tr> 
+                                
+                               
+                            </table>
+
+            
+                        <!-- Experience Table 3-->
+                        <table>
+                            <!-- Row One -->
+                            <tr class="Table" id="Table">
+                                <th>Position Title</th>
+                                <th>Years in this Position</th>
+                                <th>Value of Managed Assets</th>
+                                <th>Direct Reports</th>
+                                <th>Management Level</th>
+                                <th>Presentation Experience</th>
+                            </tr>
+                            <!-- Row Two -->
+                            <tr>
+                                <td>
+                                    <input type="text" name="Position" id="Position" >
+                                </td>
+                                <td>
+                                    <input type="number" name="years" id="years" >
+                                </td>
+                                <td>
+                                    <input type="text" name="Assets" id="Assets" >
+                                </td>
+                                <td>
+                                    <input type="text" name="reports" id="reports" >
+                                </td>
+                                <td>
+                                    <select class="table" name="management-level" id="management-level" required>
+                                        <option value="Director">Director (led team of teams)</option>
+                                        <option value="Manager">Manager (led department)</option>
+                                        <option value="Supervisor">Supervisor (led team)</option>
+                                        <option value="Trainer">Trainer (trained individuals)</option>
+                                </td>
+                                <td>
+                                    <select class="table" name="Presentation-experience" id="Presentation-experience" required>
+                                        <option value="Executive">Executives</option>
+                                        <option value="Manager">Branch</option>
+                                        <option value="Supervisor">Team</option>
+                                        <option value="Trainer">Individual)</option>
+                                </td>
+                            </tr>
+                        </table>
+
+            
+            </div>
+            <h2 class="Title" id="Education">Education/Training</h2>
+            <div class="section">
+                <div>
+                
+                    <label class="Education">Name of Institution</label>
+                    <input type="text" name="Education" id="Education" required>
+                    <label class="Education">Graduation </label>
+                    <input type="date" name="Date-complete" id="Date-complete" required>
+                    </div>
+                <div>
+                    
+                    <label class="Education">Name of Institution</label>
+                    <input type="text" name="Education" id="Education">
+                    <label class="Education">Graduation  </label>
+                    <input type="date" name="Date-complete" id="Date-complete">
+                    
+                </div>
+                <div>
+                    
+                    <label class="Education">Name of Institution</label>
+                    <input type="text" name="Education" id="Education">
+                    <label class="Education">Graduation </label>
+                    <input type="date" name="Date-complete" id="Date-complete">
+                    
+                </div>
+            </div>
+            <h2 class="Title" id="Credentials">Credentials</h2>
+            <div class="section">
+                <div>
+                
+                    <label class="Education">Name of Institution</label>
+                    <input type="text" name="Education" id="Education" required>
+                    <label class="Education">Obtained</label>
+                    <input type="date" name="Date-obtained" id="Date-complete" required>
+                    
+                </div>
+            
+            </div>
+            <h2 class="Title" id="Interests">Interests</h2>
+            <div class="section">
+                <div>
+                    
+                    <input type="text" name="Interests" id="Interests" required>
+                    <input type="text" name="Interests" id="Interests" required>
+                    <input type="text" name="Interests" id="Interests" required>
+                  
+                    
+                </div>
+        </div>
+        <h2 class="Title" id="DISC">DISC Personality Category</h2>
+            <div class="section">
+                
+                <select class="table" name="DISC" id="DISC">
+                    <option value="DOMINANCE">DOMINANCE (bold and skeptical)</option>
+                    <option value="INFLUENCE">INFLUENCE (bold and accepting)</option>
+                    <option value="STEADINESS">STEADINESS</option>
+                    <option value="CONSCIENTIOUSNESS">CONSCIENTIOUSNESS</option> 
+                
+            
+                
+            </div>
+            
+            
+            
+        </div>
+
+            
+            
+
+            
+        </form>
+
+
+        
+
+    
+    </form>
+   
+
+
+</div>
+
+<p class="section" id="paragraph"> Your company is a Coalition Partner with Transition Overwatch to align, equip, and launch 20,000
+    transitioning military members every year into high-growth career paths through the Unconventional
+    Apprenticeship. The Unconventional Apprenticeship is the dynamic alternative to the college degree. Learn
+    more at TransitionOverwatch.com.</p>
+
+</body>
+        <div class="Snapshot-form">
+                <input type="submit" value="Submit">
+            </div>
+</html>
