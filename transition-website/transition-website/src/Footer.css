@@ -1,0 +1,17 @@
+#Footer{
+    position: fixed;   
+    bottom: 0;
+    padding-bottom: 50px;
+    width: 60%;
+    display: flex;
+    justify-content: center;
+    color: #D2B48C;
+    height: 200px;
+    background-color: black;
+    margin-left: -300px;
+    border-radius: 22px;
+    border-width: 1px;
+    border-color: white;
+
+
+}

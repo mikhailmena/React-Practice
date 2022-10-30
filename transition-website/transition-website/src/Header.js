@@ -1,13 +1,19 @@
 import React from "react";
-import Image from 'react-bootstrap/Image'
+import { Card } from "react-bootstrap";
+import  Container from "react-bootstrap/Container";
+import "./Header.css"
+
 
 
 function Header (){
     return (
-        <div>
-            <img src="./title.png" className="img-responsive" alt="image" style={{width: '58%'}}></img>
-            <img src="./flag.png" className="img-responsive" alt="Image" style={{width: '42%'}} ></img>
-        </div>
+        <Container className="headerCont" >
+            {/* <img src="./title.png" className="img-responsive" alt="image" style={{width: '58%'}}></img> */}
+            <Card className="headerCont">
+            <h1 id="headerTitle">-SSG's Simplified Military Transition</h1>
+
+            </Card>
+        </Container>
     )
 }
 export default Header;

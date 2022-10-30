@@ -1,0 +1,18 @@
+#headerTitle {
+    position: relative;
+    left: 25%;
+    color: #D2B48C;
+    width: fit-content;
+
+    background-color: black;
+}
+
+.headerCont{
+    padding-top: 25px;
+    padding-bottom: 25px;
+    background-color: black;
+    border-color: white;
+    border-width: 1px;
+    border-radius: 22px;
+    
+}

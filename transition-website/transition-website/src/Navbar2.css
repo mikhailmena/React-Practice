@@ -1,0 +1,66 @@
+
+    @media (min-width: 991.98px) {
+    main {
+    padding-left: 240px;
+    }
+    }
+    
+    /* Sidebar */
+    .sidebar {
+    color: #D2B48C;
+    position: relative;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    padding: 10px 0 0; /* Height of navbar */
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 5%), 0 2px 10px 0 rgb(0 0 0 / 5%);
+    width: 80%;
+    z-index: 600;
+    
+    }
+    
+    @media (max-width: 991.98px) {
+    .sidebar {
+    width: 100%;
+  
+    }
+    }
+    .sidebar .active {
+    border-radius: 5px;
+    box-shadow: 0 2px 5px 0 rgb(0 0 0 / 16%), 0 2px 10px 0 rgb(0 0 0 / 12%);
+    }
+    
+    .sidebar-sticky {
+    position: relative;
+    top: 0;
+    height: calc(100vh - 48px);
+    padding-top: 0.5rem;
+    overflow-x: hidden;
+    overflow-y: auto; /* Scrollable contents if viewport is shorter than content. */
+    }
+    .collapse{
+        border-radius: 22px;
+        border-width: 20px;
+        border-color: #D2B48C;
+        font-weight: 800;
+        font-size:  1.5em;
+    }
+
+    .navbar2Div{
+        color: #D2B48C;
+        background-color: black;
+    }
+    #sidebarMenu {
+        color: #D2B48C;
+        border-radius: 22px;
+        border-width: 20px;
+        border-color: #D2B48C;
+        font-weight: 800;
+        font-size:  1.5em;
+    }
+    nav{
+        border-radius: 22px;
+        border-width: 20px;
+        border-color: #D2B48C;
+    }
+    
