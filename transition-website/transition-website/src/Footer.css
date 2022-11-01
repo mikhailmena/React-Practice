@@ -1,17 +1,16 @@
 #Footer{
     position: fixed;   
     bottom: 0;
-    padding-bottom: 50px;
+    padding-bottom: 20em;
     width: 60%;
     display: flex;
     justify-content: center;
     color: #D2B48C;
-    height: 200px;
+    height: 30em;
     background-color: black;
     margin-left: -300px;
-    border-radius: 22px;
-    border-width: 1px;
-    border-color: white;
+    
+   
 
 
 }

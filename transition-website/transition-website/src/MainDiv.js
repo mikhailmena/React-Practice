@@ -19,11 +19,12 @@ function MainDiv() {
                     <NavBar2/>
                 </Col>
                 <Col >
-                    <App/>
+                <iframe src="./GettingOutMadeSimple.pdf#zoom=400&toolbar=0" height="2000em" width="2100em"  toolbar="0"></iframe>
+                    {/* <App/> */}
                 </Col>
                 
             </Row>
-            <Footer/>
+            {/* <Footer/> */}
         </Container>
     )
 }
